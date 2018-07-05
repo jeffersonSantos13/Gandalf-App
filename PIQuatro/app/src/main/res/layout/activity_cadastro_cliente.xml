@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_cadastro_cliente"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.app.gandalf.piquatro.CadastroCliente">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/mytoolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_blue_dark"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/textInputLayout1"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mytoolbar"
+        android:layout_centerHorizontal="true">
+
+        <EditText
+            android:id="@+id/txtemail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/txtsenha"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="15dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="E-Mail"
+            android:inputType="textPersonName"
+            android:textSize="16dp" />
+
+    </android.support.design.widget.TextInputLayout>
+
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textInputLayout2"
+        android:layout_alignTop="@+id/textInputLayout1"
+        android:layout_alignStart="@+id/textInputLayout1"
+        android:layout_marginTop="52dp"
+        android:layout_alignEnd="@+id/textInputLayout1">
+
+        <EditText
+            android:id="@+id/txtsenha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_above="@+id/txtnomeapelido"
+            android:layout_alignParentStart="true"
+            android:ems="10"
+            android:hint="Senha"
+            android:inputType="textPassword"
+            android:textSize="16dp" />
+
+    </android.support.design.widget.TextInputLayout>
+
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textInputLayout3"
+
+        android:layout_below="@+id/textInputLayout2"
+        android:layout_alignStart="@+id/textInputLayout2"
+        android:layout_alignEnd="@+id/textInputLayout2">
+
+
+        <EditText
+            android:id="@+id/txtnomeapelido"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:textSize="16dp"
+            android:hint="Nome Completo"
+            android:inputType="textPersonName"
+            android:layout_above="@+id/txtcpf"
+            android:layout_alignParentStart="true" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textInputLayout4"
+        android:layout_below="@+id/textInputLayout3"
+        android:layout_alignStart="@+id/textInputLayout3"
+        android:layout_alignEnd="@+id/textInputLayout3">
+
+        <EditText
+            android:id="@+id/txtcpf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="CPF"
+            android:textSize="16dp"
+            android:inputType="number"
+            android:layout_alignTop="@+id/loadingLogin"
+            android:layout_alignParentStart="true" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textInputLayout5"
+
+        android:layout_below="@+id/textInputLayout4"
+        android:layout_alignStart="@+id/textInputLayout4"
+        android:layout_alignEnd="@+id/textInputLayout4">
+
+
+        <EditText
+            android:id="@+id/txtnasc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:ems="10"
+            android:hint="Dt. Nascimento (AAAA/MM/DD)"
+            android:inputType="date"
+            android:textSize="16dp" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textInputLayout6"
+        android:layout_below="@+id/textInputLayout5"
+        android:layout_alignStart="@+id/textInputLayout5"
+        android:layout_alignEnd="@+id/textInputLayout5">
+
+        <EditText
+            android:id="@+id/txtcelular"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:ems="10"
+            android:hint="Celular"
+            android:inputType="number"
+
+            android:layout_above="@+id/txtres"
+            android:layout_alignParentStart="true" />
+
+    </android.support.design.widget.TextInputLayout>
+
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textInputLayout7"
+
+        android:layout_above="@+id/checknews"
+        android:layout_alignStart="@+id/textInputLayout8"
+        android:layout_marginBottom="20dp"
+        android:layout_alignEnd="@+id/textInputLayout8">
+
+
+        <EditText
+            android:id="@+id/txtres"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/txtcomercial"
+            android:layout_alignParentStart="true"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="Tel. Residencial"
+            android:inputType="textPersonName"
+            android:textSize="16dp" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textInputLayout8"
+        android:layout_below="@+id/textInputLayout6"
+        android:layout_alignStart="@+id/textInputLayout6"
+        android:layout_alignEnd="@+id/textInputLayout6">
+
+
+        <EditText
+            android:id="@+id/txtcomercial"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:layout_above="@+id/checknews"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="16dp"
+            android:ems="10"
+            android:hint="Tel. Comercial"
+            android:inputType="textPersonName"
+            android:textSize="16dp" />
+
+
+    </android.support.design.widget.TextInputLayout>
+
+    <ProgressBar
+        android:id="@+id/loadingLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:indeterminate="true"
+        android:visibility="invisible"
+        android:layout_centerInParent= "true"
+        android:layout_centerHorizontal="true" />
+
+    <CheckBox
+        android:id="@+id/checknews"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Deseja receber ofertas por e-mail?"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:layout_marginBottom="15dp"
+        android:layout_above="@+id/btnok"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/btnok"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_blue_bright"
+        android:text="Criar seu cadastro"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>

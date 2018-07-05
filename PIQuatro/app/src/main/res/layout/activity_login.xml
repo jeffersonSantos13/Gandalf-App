@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.app.gandalf.piquatro.Login">
+
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/txtlogin"
+        android:hint="Login"
+        android:layout_marginBottom="30dp"
+        android:layout_above="@+id/txtsenha"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/txtsenha"
+        android:hint="Senha"
+        android:layout_above="@+id/btnok"
+        android:layout_toEndOf="@+id/imageView4"
+        android:layout_marginBottom="23dp" />
+
+    <Button
+        android:text="Entrar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnok"
+        android:textColorLink="@android:color/holo_green_dark"
+        android:background="@android:color/holo_blue_bright"
+        android:textSize="18sp"
+        android:layout_above="@+id/textView3"
+        android:layout_marginBottom="15dp"
+        android:layout_alignEnd="@+id/txtsenha"
+        android:layout_toEndOf="@+id/imageView5" />
+
+    <TextView
+        android:text="Novo por aqui!?"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView3"
+        android:textSize="18sp"
+        android:textAlignment="center"
+        android:textStyle="normal|bold"
+        android:textColorLink="@android:color/holo_green_dark"
+        android:textColor="@android:color/black"
+        android:layout_marginBottom="26dp"
+        android:layout_above="@+id/txtreg"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text="Clique aqui!"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtreg"
+        android:textSize="18sp"
+        android:textAlignment="center"
+        android:textStyle="normal|bold"
+        android:textColorLink="@android:color/holo_green_dark"
+        android:textColor="@android:color/holo_blue_dark"
+        android:layout_marginBottom="39dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/logogandalf"
+        android:layout_above="@+id/txtlogin"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/user2"
+        android:layout_below="@+id/imageView3"
+        android:layout_alignBottom="@+id/txtlogin"
+        android:layout_alignStart="@+id/imageView3"
+        android:layout_toStartOf="@+id/txtlogin" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtlogin"
+        app:srcCompat="@drawable/password"
+        android:layout_alignBottom="@+id/txtsenha"
+        android:layout_alignStart="@+id/imageView4"
+        android:layout_toStartOf="@+id/txtsenha" />
+
+
+    <RelativeLayout
+        android:id="@+id/loadingPanel"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+    </RelativeLayout>
+
+</RelativeLayout>
